@@ -5,15 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="CommandHandlers\" />
-    <Folder Include="Commands\" />
-    <Folder Include="Envents\" />
-    <Folder Include="EnventHandlers\" />
-    <Folder Include="Interfaces\" />
-    <Folder Include="Validations\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="FluentValidation" Version="8.4.0" />
     <PackageReference Include="System.ComponentModel" Version="4.3.0" />
     <PackageReference Include="System.ComponentModel.Annotations" Version="4.5.0" />

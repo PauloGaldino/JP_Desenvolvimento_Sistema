@@ -1,11 +1,11 @@
-﻿using JP_Desenvolvimento.Domain.Core.Models;
+﻿using JP_Desenvolvimento.Domain.Core.Envents;
 using System;
 
-namespace JP_Desevolvimento.Domain.Models
+namespace JP_Desenvolvimento.Domain.Envents
 {
-    public class Cliente : Entity
+    public class ClienteUpdatedEvent : Event
     {
-        public Cliente(Guid id, string nome, string email, DateTime dataCadastro)
+        public ClienteUpdatedEvent(Guid id, string nome, string email, DateTime dataCadastro)
         {
             Id = id;
             Nome = nome;
@@ -13,8 +13,7 @@ namespace JP_Desevolvimento.Domain.Models
             DataCadastro = dataCadastro;
         }
 
-        // Empty constructor for EF
-        protected Cliente() { }
+        public Guid Id { get; set; }
         public string Nome { get; private set; }
         public string Email { get; set; }
         public DateTime DataCadastro { get; set; }
