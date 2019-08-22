@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+    <UserSecretsId>c92b543e-46b2-4ad9-9cd2-71ce75b08bd7</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.4.10" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\JP_Desenvolvimento.Application\JP_Desenvolvimento.Application.csproj" />
+    <ProjectReference Include="..\JP_Desenvolvimento.CrossCutting.Identity\JP_Desenvolvimento.Infra.CrossCutting.Identity.csproj" />
+    <ProjectReference Include="..\JP_Desenvolvimento.CrossCutting.Ioc\JP_Desenvolvimento.Infra.CrossCutting.Ioc.csproj" />
+    <ProjectReference Include="..\JP_Desenvolvimento.Infra.CrossCutting.Bus\JP_Desenvolvimento.Infra.CrossCutting.Bus.csproj" />
+  </ItemGroup>
+
+</Project>

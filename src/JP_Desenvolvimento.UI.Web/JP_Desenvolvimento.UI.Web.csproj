@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+    <UserSecretsId>d8fc2104-92b1-45f8-a096-b78db7af95cf</UserSecretsId>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="fluentValidation" Version="8.4.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.4.10" />
+    <PackageReference Include="System.ComponentModel" Version="4.3.0" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.5.0" />
+    <PackageReference Include="System.Security.Claims" Version="4.3.0" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\JP_Desenvolvimento.Application\JP_Desenvolvimento.Application.csproj" />
+    <ProjectReference Include="..\JP_Desenvolvimento.CrossCutting.Identity\JP_Desenvolvimento.Infra.CrossCutting.Identity.csproj" />
+    <ProjectReference Include="..\JP_Desenvolvimento.CrossCutting.Ioc\JP_Desenvolvimento.Infra.CrossCutting.Ioc.csproj" />
+  </ItemGroup>
+
+</Project>
